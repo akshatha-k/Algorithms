@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#define length 4
 struct Node{
 	char label;
 	struct Node * link;
@@ -40,9 +40,6 @@ void bfs(Nodeptr list[],int visited[]){
 }
 
 int main(){
-	int length;
-	printf("Enter number of nodes \n");	
-	scanf("%d",&length);
 	Nodeptr list[length];
 	int visited[length]={0};
 	for(int i=0;i<length;i++){

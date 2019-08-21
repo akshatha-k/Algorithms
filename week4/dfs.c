@@ -1,7 +1,7 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-
+#define length 4
 int matrix[length][length]={0};
 int visited[length];
 char pop[length];
@@ -43,9 +43,6 @@ void DFS(int i)
 }
 
 int main(){
-	int length;
-	printf("Enter number of nodes \n");	
-	scanf("%d",&length);
 	int ch=0;
 	while(ch!=3){
 		printf("\n1:Add edge\n2:Display\n3:Exit\nEnter choice:");
